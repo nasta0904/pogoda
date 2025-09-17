@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода в Усть-Илимске</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Погода в Усть-Илимске</h1>
+            <p class="date" id="current-date">Загрузка...</p>
+        </header>
+
+        <main>
+            <div class="weather-card">
+                <div class="temperature">
+                    <span id="temp">-7°C</span>
+                </div>
+                <div class="weather-icon">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNDQ4IDI3MmMwIDk3LjItNzguOCAxNzYtMTc2IDE3NnMtMTc2LTc4LjgtMTc2LTE3NmMwLTQ4LjIgMTkuNS05MS45IDUxLjItMTI0LjQgMTIuNC0xMi40IDEyLjQtMzIuOCAwLTQ1LjJzLTMyLjgtMTIuNC00NS4yIDBDNDcuMyAxNjMuNSA0OCA4MC45IDQ4IDgwLjljMC00NC4xIDM1LjktODAgODAtODBjMjIuMyAwIDQyLjkgOS4zIDU3LjcgMjUuOCA0Ni45LTExLjYgOTcuOC00LjEgMTM0LjQgMzIuNUMzODAgMTQ0IDM5MiAxODQuNSAzOTIgMjI0YzAgMjAuOS01LjQgNDAuNS0xNC45IDU3LjYgMTUuMyAxNC43IDI0LjkgMzQuOCAyNC45IDU2LjkgMCA0NC4xLTM1LjkgODAtODAgODAtMTcuNyAwLTMzLjktNS43LTQ3LjQtMTUuMS00LjYtMy4xLTkuOS00LjktMTUuNi00LjktMTMuOCAwLTI1IDExLjItMjUgMjVzMTEuMiAyNSAyNSAyNWM0MS43IDAgNzUuNy0zMS4xIDc5LjctNzEuNUM0MzcuMiAzMjEuMiA0NDggMjk4LjMgNDQ4IDI3MnoiLz48L3N2Zz4=" alt="Погода">
+                </div>
+                <div class="description" id="description">Снег</div>
+            </div>
+
+            <div class="details">
+                <div class="detail">
+                    <span class="label">Ветер:</span>
+                    <span class="value" id="wind">3 м/с</span>
+                </div>
+                <div class="detail">
+                    <span class="label">Влажность:</span>
+                    <span class="value" id="humidity">75%</span>
+                </div>
+                <div class="detail">
+                    <span class="label">Давление:</span>
+                    <span class="value" id="pressure">755 мм рт.ст.</span>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <h2>Прогноз на 3 дня</h2>
+                <div class="forecast-items">
+                    <div class="forecast-item">
+                        <div class="day">Завтра</div>
+                        <div class="forecast-temp">-5°C</div>
+                        <div class="forecast-desc">Облачно</div>
+                    </div>
+                    <div class="forecast-item">
+                        <div class="day">Послезавтра</div>
+                        <div class="forecast-temp">-8°C</div>
+                        <div class="forecast-desc">Снег</div>
+                    </div>
+                    <div class="forecast-item">
+                        <div class="day">Суббота</div>
+                        <div class="forecast-temp">-10°C</div>
+                        <div class="forecast-desc">Ясно</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Данные обновляются каждые 30 минут</p>
+        </footer>
+    </div>
+
+    <script>
+        // Обновление даты
+        function updateDate() {
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('current-date').textContent = now.toLocaleDateString('ru-RU', options);
+        }
+        
+        updateDate();
+        setInterval(updateDate, 60000); // Обновлять каждую минуту
+    </script>
+</body>
+</html>
 
