@@ -1,79 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
- <link rel="icon" href="https://w7.pngwing.com/pngs/251/634/png-transparent-drawing-crayon-pencil-blue-pencil-leaf.png">
+    <link rel="icon" href="https://w7.pngwing.com/pngs/251/634/png-transparent-drawing-crayon-pencil-blue-pencil-leaf.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Погода в Усть-Илимске</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script">
 </head>
 <body>
-    <div class="container animated">
-        <header>
-            <div class="header-content">
-                <h1>Погода в Усть-Илимске</h1>
-                <div class="location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Иркутская область, Россия</span>
-                </div>
-                <div class="current-date">
-                    <i class="far fa-calendar-alt"></i>
-                    <span id="current-date">Загрузка...</span>
-                </div>
-            </div>
-        </header>
-        
-        <div class="current-weather">
-            <div class="temperature">-7°C</div>
-            <img src="https://cdn-icons-png.flaticon.com/512/642/642102.png" alt="Погода" class="weather-icon">
-            <div class="weather-condition">Снег</div>
-        </div>
-        
-        <div class="weather-details">
-            <div class="detail-card">
-                <i class="fas fa-wind detail-icon"></i>
-                <div class="detail-value">3.5 м/с</div>
-                <div class="detail-label">Скорость ветра</div>
-            </div>
-            <div class="detail-card">
-                <i class="fas fa-tint detail-icon"></i>
-                <div class="detail-value">78%</div>
-                <div class="detail-label">Влажность</div>
-            </div>
-            <div class="detail-card">
-                <i class="fas fa-temperature-low detail-icon"></i>
-                <div class="detail-value">-12°C</div>
-                <div class="detail-label">Ощущается как</div>
-            </div>
-            <div class="detail-card">
-                <i class="fas fa-compress-arrows-alt detail-icon"></i>
-                <div class="detail-value">756 мм</div>
-                <div class="detail-label">Давление</div>
-            </div>
-        </div>
-        
-        <div class="widget-section">
-            <h2 class="widget-title">Подробный прогноз на 2 недели</h2>
-            <div class="pogoda">
-                <div id="f1fa576f8665be52ff8a3b8fdee36ca4">
-                    <p class="ww-informers-box-854754">
-                        <a href="https://world-weather.ru/pogoda/russia/ust_ilimsk/14days/">Точный прогноз погоды в Усть-Илимске на 2 недели</a><br>
-                        <a href="https://world-weather.ru/pogoda/russia/omsk/">world-weather.ru</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <footer>
-            <p>Актуальная погода в Усть-Илимске © 2023</p>
-            <div class="footer-links">
-                <a href="https://world-weather.ru/pogoda/russia/ust_ilimsk/">Подробнее о погоде</a>
-                <a href="https://www.gismeteo.ru/weather-ust-ilimsk-5329/">Gismeteo</a>
-                <a href="https://yandex.ru/pogoda/ust-ilimsk">Яндекс.Погода</a>
-            </div>
-        </footer>
+    <div class="container">
+        <main>
+
+           <div id="f1fa576f8665be52ff8a3b8fdee36ca4" class="pogoda">
+               <p class="ww-informers-box-854754">
+                   <a href="https://world-weather.ru/pogoda/russia/ust_ilimsk/14days/">Точный прогноз погоды в Усть-Илимске на 2 недели</a><br>
+                   <a href="https://world-weather.ru/pogoda/russia/omsk/">world-weather.ru</a>
+               </p>
+           </div>
+            <script async type="text/javascript" charset="utf-8" src="https://world-weather.ru/wwinformer.php?userid=f1fa576f8665be52ff8a3b8fdee36ca4">
+                       
+                   </script>
+            <style>.ww-informers-box-854754{-webkit-animation-name:ww-informers54;animation-name:ww-informers54;-webkit-animation-duration:1.5s;animation-duration:1.5s;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;font-size:12px;font-family:Arial;line-height:18px;text-align:center}@-webkit-keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}@keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}
+            </style>
+        </main>
     </div>
 </body>
 </html>
 
+ сделай сайт интереснее
