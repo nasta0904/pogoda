@@ -10,11 +10,6 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Погода в Усть-Илимске</h1>
-            <p class="date" id="current-date">Загрузка...</p>
-        </header>
-
         <main>
 
            <div id="f1fa576f8665be52ff8a3b8fdee36ca4" class="ww-informers-box-854753">
@@ -25,23 +20,7 @@
             <style>.ww-informers-box-854754{-webkit-animation-name:ww-informers54;animation-name:ww-informers54;-webkit-animation-duration:1.5s;animation-duration:1.5s;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;font-size:12px;font-family:Arial;line-height:18px;text-align:center}@-webkit-keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}@keyframes ww-informers54{0%,80%{opacity:0}100%{opacity:1}}
             </style>
         </main>
-
-        <footer>
-            <p>Данные обновляются каждые 30 минут</p>
-        </footer>
     </div>
-
-    <script>
-        // Обновление даты
-        function updateDate() {
-            const now = new Date();
-            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-            document.getElementById('current-date').textContent = now.toLocaleDateString('ru-RU', options);
-        }
-        
-        updateDate();
-        setInterval(updateDate, 60000); // Обновлять каждую минуту
-    </script>
 </body>
 </html>
 
