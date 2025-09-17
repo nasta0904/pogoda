@@ -28,6 +28,10 @@ header {
     border-bottom: 1px solid #e0e0e0;
 }
 
+.pogoda{
+    width: 50;
+}
+
 h1 {
     color: #2c3e50;
     margin-bottom: 5px;
